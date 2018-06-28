@@ -1,5 +1,76 @@
 
 
+
+/*------------------------------- TELA DE LOGIN AJUSTES ---------------*/
+
+.login_field{
+    margin-bottom: 420px;
+}
+
+
+/* ---------------------------- CÓDIGO DA DASHBOARD ------------------------------------------------------*/
+
+
+.nav_custom{
+    background-color: #303030;
+    z-index: 1;
+    height: 800px;
+    width:300px;
+    margin-left: 0px;
+    float: left;
+    color: #fff;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+    
+    
+}
+#leftbarItens li {
+    text-shadow: 2px 2px 2px black;
+    padding-left: 10px;
+}
+
+.dropdown-menu_custom{
+    margin-bottom: -55px;
+    position: absolute;
+    z-index: 2;
+}
+
+.dropdown-item{
+    text-shadow: none;
+}
+
+#leftbarItens{
+    padding-top: 0px;
+    margin-top: -320px;
+}
+
+.custom_section{
+    margin-left: 300px;
+    transition: margin-left 1s;
+    -webkit-transition: margin-left 1s;
+}
+
+.ico_nav{
+    margin: 5px;
+    margin-left: 240px;
+    color:#000;
+    font-size: 20px;
+    background-color: #b0b0b0;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-weight: 900;
+    border-radius: 10%;
+    padding-top: 7px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    position:absolute;
+    z-index: 2;
+    transition: margin-left 1s;
+    -webkit-transition: margin-left 1s;
+
+}
+
+/* ---------------------------- CÓDIGO DA HOME ----------------------------------------------------------*/
 /* ---------------------------- Estilos do menu que desliza na hotizontal ---------------------------- */
 body{
     overflow-x: hidden;
@@ -7,7 +78,10 @@ body{
 
 #footer{
     background-color: #000;
-    color: #fff
+    color: #fff;
+    bottom: 0px; 
+    width:100%;
+    margin: 0px;
 }
 
 div.wrapper {

@@ -3,7 +3,7 @@
         
         @section('content')
         
-        <div class="container card mt-5">
+        <div class="container card mt-5 login_field">
             <div class="col-md-4"></div>
             @if ($errors->any())
                 <div class="alert alert-danger">
