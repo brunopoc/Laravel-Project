@@ -1,0 +1,287 @@
+
+
+/* ---------------------------- Estilos do menu que desliza na hotizontal ---------------------------- */
+body{
+    overflow-x: hidden;
+}
+
+#footer{
+    background-color: #000;
+    color: #fff
+}
+
+div.wrapper {
+    background-color: #fff; 
+    width: auto; 
+    height: 350px;
+    clear: both; 
+    overflow: hidden; 
+    margin-top: 15px;
+    white-space: nowrap;
+}
+
+div.horMenu {
+    overflow: hidden;  
+}
+
+div.arrow {
+    background-color: #fff;
+    margin-top: 100px;
+    float: left; 
+    width: 5%; 
+    min-width: 25px; 
+    height: 100px; 
+    line-height: 100px;
+    text-align: center; 
+    vertical-align: middle; 
+    transition: background-color 1s;
+    border-radius: 5%;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+div.numWrap {
+    float: left; 
+    height: 310px; 
+    line-height: 64px;
+/*     height: calc(100% + 1px);*/
+    width: 80%; 
+    vertical-align: middle;
+    overflow: hidden; 
+    position: relative;
+    white-space: nowrap;
+  /*  lines added for mobile touch navigation*/
+     position: relative; 
+     z-index: 0;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translatez(0);
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+div.strip {
+    position: absolute; 
+    left: 0px;
+    width: auto; 
+    white-space: nowrap;
+    transition: left 1s;
+}
+
+
+a.numberItem {
+    display: inline-block; 
+    text-align: center; 
+    margin: 0px 8px;
+    background-color: #f7f7f7; 
+    border-radius: 2%; 
+    width: 250px; 
+    height: 300px;
+    font-size: 1.2em; 
+    line-height: 48px; 
+    text-decoration: none;
+    color: #858585;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+div.controls { 
+    clear: both; 
+}
+div.controls > div.arrows { 
+    width: auto; 
+    margin: 0 12px; 
+}
+a, a:focus, a:active, a:link, a:visited {
+    display: inline-block;
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.navigation-color {
+    font-size: 40px;
+    color:#01AEBC;
+    text-align: center;
+}
+
+.leftArrowDisable{
+  color: black;
+}
+.rightArrowDisable{
+  color:black;
+}
+
+.button {
+  position: relative;
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 2.8px;
+  padding-bottom: 2.8px;
+  background: #F55000;
+  color: white;
+  font-size: 14px;
+}
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+.button:hover {
+  background: #EA804C;
+}
+
+div.arrow:hover {
+    cursor:pointer;
+    background-color: #ffcdb3;
+}
+/* Arrow Buttons */
+/* ------------- */
+.next::after,
+.prev::after {
+  border-style: solid;
+}
+/* Next Button */
+/* ----------- */
+.next::after {
+  right: -26px;
+  border-width: 13px;
+  border-color: transparent transparent transparent #F55000;
+}
+.next:hover::after {
+  border-left-color: #EA804C;
+}
+/* Prev Button */
+/* ----------- */
+.prev::after {
+  left: -26px;
+  border-color: transparent #F55000 transparent transparent;
+  border-width: 13px;
+}
+.prev:hover::after {
+  border-right-color: #EA804C;
+}
+
+
+/* ---------------------------- Barra de Pesquisa Principal ---------------------------- */
+
+#searchbar_Container{
+    margin: auto;
+}
+
+.custom-pink-btn{
+    background-color: #ffbda8;
+    border: 1px solid #ffbda8;
+    font-weight: 900;
+}
+.custom-pink-btn:hover{
+    background-color: #ff997a;
+    border: 1px solid #ff997a;
+    font-weight: 900;
+}
+
+#form_search{
+    background-color: transparent;
+    flex-grow: 1;
+}
+/* ---------------------------Menu que fica logo abaixo da Barra de Pesquisa Principal ----*/
+#menuWhite{
+    background-color: #FFF;
+    border-bottom: 1px solid #b3b3b3;
+}
+/* ---------------------------Menu que Primeira Lista de Produtos ----*/
+#productFirstList{
+    background-color: #e3e3e3;
+}
+
+.nav-center {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+
+/* ----------------------------------- Media Querys Ajustes --------------------------------------- */
+@media (max-width: 576px) { 
+    /* ----------------------------Ajuste da Imagem Principal --------------------------- */
+    #searchhome {
+        height: 450px;
+        background-color: rgba(134, 19, 122, 0.65);
+        background-image: url("/LaravelBlog/public/img/home_992.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    /*----------------------Ajuste da barra do form da Pesquisa Principal ------------*/
+    .form-small{
+        padding: 15px;
+        margin: 15px;
+    }
+    
+    /*----------------------Sobre a Lista de produtos na horizontal --------------------*/
+    div.numWrap {
+
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+}
+
+
+@media (max-width: 768px) { 
+    /* ----------------------------Ajuste da Imagem Principal --------------------------- */
+    #searchhome {
+        height: 450px;
+        background-color: rgba(134, 19, 122, 0.65);
+        background-image: url("/LaravelBlog/public/img/home_992.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+    /*----------------------Ajuste do botão e a form da Pesquisa Principal ------------*/
+    .btn, .btn-group {
+        width:100%;
+    }
+    #form_row{
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 769px) { 
+    /* ----------------------------Ajuste da Imagem Principal --------------------------- */
+    #searchhome {
+        height: 450px;
+        background-color: rgba(134, 19, 122, 0.65);
+        background-image: url("/LaravelBlog/public/img/home_992.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    /*----------------------Ajuste da barra do form da Pesquisa Principal ------------*/
+    #form_row{
+        padding-top: 10px;
+    }
+    
+}
+
+@media (min-width: 1200px) { 
+    /* ----------------------------Ajuste da Imagem Principal --------------------------- */
+    #searchhome {
+        
+        height: 450px;
+        background-color: rgba(134, 19, 122, 0.65);
+        background-image: url("/LaravelBlog/public/img/home_full.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    /*----------------------Ajuste da barra do form da Pesquisa Principal ------------*/
+    #form_row{
+        padding-top: 10px;
+    }
+}
+
