@@ -15,12 +15,13 @@
     background-color: #303030;
     z-index: 1;
     height: 800px;
-    width:300px;
+    width:200px;
     margin-left: 0px;
     float: left;
     color: #fff;
-    transition: width 1s;
-    -webkit-transition: width 1s;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    box-shadow: 1px 1px 1px black;
     
     
 }
@@ -30,8 +31,7 @@
 }
 
 .dropdown-menu_custom{
-    margin-bottom: -55px;
-    position: absolute;
+    margin-bottom: -70px;
     z-index: 2;
 }
 
@@ -46,13 +46,13 @@
 
 .custom_section{
     margin-left: 300px;
-    transition: margin-left 1s;
-    -webkit-transition: margin-left 1s;
+    transition: margin-left 0.5s;
+    -webkit-transition: margin-left 0.5s;
 }
 
 .ico_nav{
     margin: 5px;
-    margin-left: 240px;
+    margin-left: 140px;
     color:#000;
     font-size: 20px;
     background-color: #b0b0b0;
@@ -65,9 +65,18 @@
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     position:absolute;
     z-index: 2;
-    transition: margin-left 1s;
-    -webkit-transition: margin-left 1s;
+    transition: margin-left 0.5s;
+    -webkit-transition: margin-left 0.5s;
 
+}
+
+.nav-item-r {
+    width: 180px;
+}
+
+.nav-item-r:hover {
+    cursor:pointer;
+    background-color: #212121;
 }
 
 /* ---------------------------- CÓDIGO DA HOME ----------------------------------------------------------*/

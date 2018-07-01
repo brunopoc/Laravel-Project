@@ -19,5 +19,8 @@ Route::group(['middleware'=>['auth']], function(){
             Auth::logout();
             return redirect()->route('home');
     })->name('logout');
+    
+    // --- DashBoard Section
     Route::get('/dashboard', "HomeController@dashboard")->name('dashboard');
+    Route::post('dashsection', "dashSection\dashboardController@index")->name('dash');
 });
