@@ -297,7 +297,7 @@ div.arrow:hover {
     #searchhome {
         height: 450px;
         background-color: rgba(134, 19, 122, 0.65);
-        background-image: url("/LaravelBlog/public/img/home_992.png");
+        background-image: url("../img/home_992.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
@@ -322,7 +322,7 @@ div.arrow:hover {
     #searchhome {
         height: 450px;
         background-color: rgba(134, 19, 122, 0.65);
-        background-image: url("/LaravelBlog/public/img/home_992.png");
+        background-image: url("../img/home_992.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         
@@ -341,7 +341,7 @@ div.arrow:hover {
     #searchhome {
         height: 450px;
         background-color: rgba(134, 19, 122, 0.65);
-        background-image: url("/LaravelBlog/public/img/home_992.png");
+        background-image: url("../img/home_992.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
@@ -358,7 +358,7 @@ div.arrow:hover {
         
         height: 450px;
         background-color: rgba(134, 19, 122, 0.65);
-        background-image: url("/LaravelBlog/public/img/home_full.png");
+        background-image: url("../img/home_full.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
